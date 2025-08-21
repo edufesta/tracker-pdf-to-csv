@@ -1,7 +1,11 @@
 
+
+
 # pdf2csv-tracker
 
 Ferramenta para extrair e converter relatórios PDF de posições de veículos em arquivos CSV, facilitando o acompanhamento, análise e geração de relatórios.
+
+> **Atenção:** O script recomendado e mantido é o `extract_vehicle_positions.py`. O arquivo `pdf2csv.py` foi removido do projeto.
 
 ## Instalação
 
@@ -21,8 +25,7 @@ Ferramenta para extrair e converter relatórios PDF de posições de veículos e
 	```
 
 ## Estrutura do Projeto
-- `pdf2csv.py`: Script principal para converter todos os PDFs da pasta `sourcePdf/` em CSVs na pasta `output/`.
-- `extract_vehicle_positions.py`: Funções avançadas para extração estruturada e geração de relatórios.
+- `extract_vehicle_positions.py`: Script principal para extração estruturada dos PDFs e geração de relatórios e CSVs.
 - `output/`: Pasta para arquivos CSV gerados (mantida vazia no repositório).
 - `sourcePdf/`: Pasta para armazenar os PDFs de entrada (mantida vazia no repositório).
 - `test_pdf2csv.py`: Testes automatizados.
@@ -31,18 +34,11 @@ Ferramenta para extrair e converter relatórios PDF de posições de veículos e
 ## Como Usar
 
 1. Coloque os arquivos PDF de relatórios na pasta `sourcePdf/`.
-2. Execute o script principal para converter todos os PDFs:
+2. Execute o script para processar e gerar CSVs e relatório Markdown:
 	```bash
-	python pdf2csv.py
+	python extract_vehicle_positions.py
 	```
-	Os arquivos CSV serão gerados na pasta `output/`.
-
-### Extração Estruturada e Relatório
-Para extração estruturada e geração de relatório Markdown, execute:
-```bash
-python extract_vehicle_positions.py
-```
-O relatório será salvo em `relatorio_extracao.md`.
+	Os arquivos CSV serão gerados na pasta `output/` e o relatório em `relatorio_extracao.md`.
 
 ## Testes Automatizados
 Para rodar os testes:
