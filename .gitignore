@@ -1,0 +1,5 @@
+output/
+sourcePdf/
+!output/.gitkeep
+!sourcePdf/.gitkeep
+relatorio_extracao.md
